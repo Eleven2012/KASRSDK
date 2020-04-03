@@ -15,6 +15,8 @@
 		A5504F18243735B30034FD2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5504F16243735B30034FD2D /* LaunchScreen.storyboard */; };
 		A5504F23243735B30034FD2D /* KSpeechExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F22243735B30034FD2D /* KSpeechExampleTests.swift */; };
 		A5504F2E243735B30034FD2D /* KSpeechExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F2D243735B30034FD2D /* KSpeechExampleUITests.swift */; };
+		A5504F4124373BBD0034FD2D /* KSpeechRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5504F4024373BBD0034FD2D /* KSpeechRecognition.framework */; };
+		A5504F4224373BBD0034FD2D /* KSpeechRecognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5504F4024373BBD0034FD2D /* KSpeechRecognition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A5504F4324373BBD0034FD2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5504F4224373BBD0034FD2D /* KSpeechRecognition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A5504F08243735B10034FD2D /* KSpeechExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSpeechExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5504F0B243735B10034FD2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		A5504F29243735B30034FD2D /* KSpeechExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSpeechExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5504F2D243735B30034FD2D /* KSpeechExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSpeechExampleUITests.swift; sourceTree = "<group>"; };
 		A5504F2F243735B40034FD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5504F4024373BBD0034FD2D /* KSpeechRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KSpeechRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5504F4124373BBD0034FD2D /* KSpeechRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +150,7 @@
 		A5504F3B2437373F0034FD2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5504F4024373BBD0034FD2D /* KSpeechRecognition.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +165,7 @@
 				A5504F04243735B10034FD2D /* Sources */,
 				A5504F05243735B10034FD2D /* Frameworks */,
 				A5504F06243735B10034FD2D /* Resources */,
+				A5504F4324373BBD0034FD2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
