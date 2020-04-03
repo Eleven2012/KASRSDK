@@ -83,6 +83,7 @@
 				A5504F21243735B30034FD2D /* KSpeechExampleTests */,
 				A5504F2C243735B30034FD2D /* KSpeechExampleUITests */,
 				A5504F09243735B10034FD2D /* Products */,
+				A5504F3B2437373F0034FD2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +127,13 @@
 				A5504F2F243735B40034FD2D /* Info.plist */,
 			);
 			path = KSpeechExampleUITests;
+			sourceTree = "<group>";
+		};
+		A5504F3B2437373F0034FD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = KSpeechExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = KSpeechExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

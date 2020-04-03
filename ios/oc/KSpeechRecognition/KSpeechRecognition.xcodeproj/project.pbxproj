@@ -177,8 +177,9 @@
 		A5504E6D243704810034FD2D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */,
+				A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */,
 				A5504EBA24371BA80034FD2D /* Res */,
-				A5504E9C243708830034FD2D /* Command */,
 				A5504E9B2437074D0034FD2D /* Speech */,
 				A5504E96243706DB0034FD2D /* Utils */,
 			);
@@ -257,17 +258,8 @@
 				A5504EAB24370C480034FD2D /* KRecognitionResult.m */,
 				A5504EB6243719370034FD2D /* KSiriRecognizer.h */,
 				A5504EB7243719370034FD2D /* KSiriRecognizer.m */,
-				A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */,
-				A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */,
 			);
 			path = Speech;
-			sourceTree = "<group>";
-		};
-		A5504E9C243708830034FD2D /* Command */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Command;
 			sourceTree = "<group>";
 		};
 		A5504EBA24371BA80034FD2D /* Res */ = {
