@@ -43,6 +43,8 @@
 		A5504EB9243719370034FD2D /* KSiriRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EB7243719370034FD2D /* KSiriRecognizer.m */; };
 		A5504EBD24371BE00034FD2D /* Instructions-en.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5504EBB24371BE00034FD2D /* Instructions-en.plist */; };
 		A5504EBE24371BE00034FD2D /* Instructions-zh.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5504EBC24371BE00034FD2D /* Instructions-zh.plist */; };
+		A5504EC124372FBB0034FD2D /* KSpeechRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */; };
+		A5504EC224372FBB0034FD2D /* KSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		A5504EB7243719370034FD2D /* KSiriRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSiriRecognizer.m; sourceTree = "<group>"; };
 		A5504EBB24371BE00034FD2D /* Instructions-en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Instructions-en.plist"; sourceTree = "<group>"; };
 		A5504EBC24371BE00034FD2D /* Instructions-zh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Instructions-zh.plist"; sourceTree = "<group>"; };
+		A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSpeechRecognizer.h; sourceTree = "<group>"; };
+		A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSpeechRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +257,8 @@
 				A5504EAB24370C480034FD2D /* KRecognitionResult.m */,
 				A5504EB6243719370034FD2D /* KSiriRecognizer.h */,
 				A5504EB7243719370034FD2D /* KSiriRecognizer.m */,
+				A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */,
+				A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */,
 			);
 			path = Speech;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				A5504EAC24370C480034FD2D /* KRecognitionResult.h in Headers */,
 				A5504E7E243705720034FD2D /* BDSUploaderParameters.h in Headers */,
 				A5504E9F2437092A0034FD2D /* KBaiduRecognizer.h in Headers */,
+				A5504EC124372FBB0034FD2D /* KSpeechRecognizer.h in Headers */,
 				A5504EB024370F6C0034FD2D /* KHelper.h in Headers */,
 				A5504E81243705720034FD2D /* BDSWakeupParameters.h in Headers */,
 				A5504E7B243705720034FD2D /* BDSUploaderDefines.h in Headers */,
@@ -423,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5504E9A243706F20034FD2D /* AFNetworkReachabilityManager.m in Sources */,
+				A5504EC224372FBB0034FD2D /* KSpeechRecognizer.m in Sources */,
 				A5504EA42437097C0034FD2D /* KBaseRecognition.m in Sources */,
 				A5504EB5243711E50034FD2D /* KError.m in Sources */,
 				A5504EB124370F6C0034FD2D /* KHelper.m in Sources */,
