@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5504F0C243735B10034FD2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F0B243735B10034FD2D /* AppDelegate.swift */; };
+		A5504F0E243735B10034FD2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F0D243735B10034FD2D /* SceneDelegate.swift */; };
+		A5504F10243735B10034FD2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F0F243735B10034FD2D /* ViewController.swift */; };
+		A5504F13243735B10034FD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5504F11243735B10034FD2D /* Main.storyboard */; };
+		A5504F15243735B30034FD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5504F14243735B30034FD2D /* Assets.xcassets */; };
+		A5504F18243735B30034FD2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5504F16243735B30034FD2D /* LaunchScreen.storyboard */; };
+		A5504F23243735B30034FD2D /* KSpeechExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F22243735B30034FD2D /* KSpeechExampleTests.swift */; };
+		A5504F2E243735B30034FD2D /* KSpeechExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504F2D243735B30034FD2D /* KSpeechExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5504F1F243735B30034FD2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5504F00243735B10034FD2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5504F07243735B10034FD2D;
+			remoteInfo = KSpeechExample;
+		};
+		A5504F2A243735B30034FD2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5504F00243735B10034FD2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5504F07243735B10034FD2D;
+			remoteInfo = KSpeechExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5504F08243735B10034FD2D /* KSpeechExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSpeechExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5504F0B243735B10034FD2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5504F0D243735B10034FD2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5504F0F243735B10034FD2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5504F12243735B10034FD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5504F14243735B30034FD2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5504F17243735B30034FD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5504F19243735B30034FD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5504F1E243735B30034FD2D /* KSpeechExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSpeechExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5504F22243735B30034FD2D /* KSpeechExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSpeechExampleTests.swift; sourceTree = "<group>"; };
+		A5504F24243735B30034FD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5504F29243735B30034FD2D /* KSpeechExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSpeechExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5504F2D243735B30034FD2D /* KSpeechExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSpeechExampleUITests.swift; sourceTree = "<group>"; };
+		A5504F2F243735B40034FD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5504F05243735B10034FD2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F1B243735B30034FD2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F26243735B30034FD2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5504EFF243735B10034FD2D = {
+			isa = PBXGroup;
+			children = (
+				A5504F0A243735B10034FD2D /* KSpeechExample */,
+				A5504F21243735B30034FD2D /* KSpeechExampleTests */,
+				A5504F2C243735B30034FD2D /* KSpeechExampleUITests */,
+				A5504F09243735B10034FD2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5504F09243735B10034FD2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5504F08243735B10034FD2D /* KSpeechExample.app */,
+				A5504F1E243735B30034FD2D /* KSpeechExampleTests.xctest */,
+				A5504F29243735B30034FD2D /* KSpeechExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5504F0A243735B10034FD2D /* KSpeechExample */ = {
+			isa = PBXGroup;
+			children = (
+				A5504F0B243735B10034FD2D /* AppDelegate.swift */,
+				A5504F0D243735B10034FD2D /* SceneDelegate.swift */,
+				A5504F0F243735B10034FD2D /* ViewController.swift */,
+				A5504F11243735B10034FD2D /* Main.storyboard */,
+				A5504F14243735B30034FD2D /* Assets.xcassets */,
+				A5504F16243735B30034FD2D /* LaunchScreen.storyboard */,
+				A5504F19243735B30034FD2D /* Info.plist */,
+			);
+			path = KSpeechExample;
+			sourceTree = "<group>";
+		};
+		A5504F21243735B30034FD2D /* KSpeechExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5504F22243735B30034FD2D /* KSpeechExampleTests.swift */,
+				A5504F24243735B30034FD2D /* Info.plist */,
+			);
+			path = KSpeechExampleTests;
+			sourceTree = "<group>";
+		};
+		A5504F2C243735B30034FD2D /* KSpeechExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5504F2D243735B30034FD2D /* KSpeechExampleUITests.swift */,
+				A5504F2F243735B40034FD2D /* Info.plist */,
+			);
+			path = KSpeechExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5504F07243735B10034FD2D /* KSpeechExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5504F32243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExample" */;
+			buildPhases = (
+				A5504F04243735B10034FD2D /* Sources */,
+				A5504F05243735B10034FD2D /* Frameworks */,
+				A5504F06243735B10034FD2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSpeechExample;
+			productName = KSpeechExample;
+			productReference = A5504F08243735B10034FD2D /* KSpeechExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5504F1D243735B30034FD2D /* KSpeechExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5504F35243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExampleTests" */;
+			buildPhases = (
+				A5504F1A243735B30034FD2D /* Sources */,
+				A5504F1B243735B30034FD2D /* Frameworks */,
+				A5504F1C243735B30034FD2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5504F20243735B30034FD2D /* PBXTargetDependency */,
+			);
+			name = KSpeechExampleTests;
+			productName = KSpeechExampleTests;
+			productReference = A5504F1E243735B30034FD2D /* KSpeechExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5504F28243735B30034FD2D /* KSpeechExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5504F38243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExampleUITests" */;
+			buildPhases = (
+				A5504F25243735B30034FD2D /* Sources */,
+				A5504F26243735B30034FD2D /* Frameworks */,
+				A5504F27243735B30034FD2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5504F2B243735B30034FD2D /* PBXTargetDependency */,
+			);
+			name = KSpeechExampleUITests;
+			productName = KSpeechExampleUITests;
+			productReference = A5504F29243735B30034FD2D /* KSpeechExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5504F00243735B10034FD2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A5504F07243735B10034FD2D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					A5504F1D243735B30034FD2D = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = A5504F07243735B10034FD2D;
+					};
+					A5504F28243735B30034FD2D = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = A5504F07243735B10034FD2D;
+					};
+				};
+			};
+			buildConfigurationList = A5504F03243735B10034FD2D /* Build configuration list for PBXProject "KSpeechExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5504EFF243735B10034FD2D;
+			productRefGroup = A5504F09243735B10034FD2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5504F07243735B10034FD2D /* KSpeechExample */,
+				A5504F1D243735B30034FD2D /* KSpeechExampleTests */,
+				A5504F28243735B30034FD2D /* KSpeechExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5504F06243735B10034FD2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5504F18243735B30034FD2D /* LaunchScreen.storyboard in Resources */,
+				A5504F15243735B30034FD2D /* Assets.xcassets in Resources */,
+				A5504F13243735B10034FD2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F1C243735B30034FD2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F27243735B30034FD2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5504F04243735B10034FD2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5504F10243735B10034FD2D /* ViewController.swift in Sources */,
+				A5504F0C243735B10034FD2D /* AppDelegate.swift in Sources */,
+				A5504F0E243735B10034FD2D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F1A243735B30034FD2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5504F23243735B30034FD2D /* KSpeechExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5504F25243735B30034FD2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5504F2E243735B30034FD2D /* KSpeechExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5504F20243735B30034FD2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5504F07243735B10034FD2D /* KSpeechExample */;
+			targetProxy = A5504F1F243735B30034FD2D /* PBXContainerItemProxy */;
+		};
+		A5504F2B243735B30034FD2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5504F07243735B10034FD2D /* KSpeechExample */;
+			targetProxy = A5504F2A243735B30034FD2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5504F11243735B10034FD2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5504F12243735B10034FD2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5504F16243735B30034FD2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5504F17243735B30034FD2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5504F30243735B40034FD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5504F31243735B40034FD2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5504F33243735B40034FD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5504F34243735B40034FD2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5504F36243735B40034FD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KSpeechExample.app/KSpeechExample";
+			};
+			name = Debug;
+		};
+		A5504F37243735B40034FD2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KSpeechExample.app/KSpeechExample";
+			};
+			name = Release;
+		};
+		A5504F39243735B40034FD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KSpeechExample;
+			};
+			name = Debug;
+		};
+		A5504F3A243735B40034FD2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = KSpeechExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.KSpeechExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KSpeechExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5504F03243735B10034FD2D /* Build configuration list for PBXProject "KSpeechExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5504F30243735B40034FD2D /* Debug */,
+				A5504F31243735B40034FD2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5504F32243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5504F33243735B40034FD2D /* Debug */,
+				A5504F34243735B40034FD2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5504F35243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5504F36243735B40034FD2D /* Debug */,
+				A5504F37243735B40034FD2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5504F38243735B40034FD2D /* Build configuration list for PBXNativeTarget "KSpeechExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5504F39243735B40034FD2D /* Debug */,
+				A5504F3A243735B40034FD2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5504F00243735B10034FD2D /* Project object */;
+}

@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char KSpeechRecognitionVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KSpeechRecognition/PublicHeader.h>
 
+#import <KSpeechRecognition/KDefine.h>
+#import <KSpeechRecognition/KSpeechRecognizer.h>
+
 
