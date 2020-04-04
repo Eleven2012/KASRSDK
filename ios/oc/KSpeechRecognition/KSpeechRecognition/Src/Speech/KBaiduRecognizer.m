@@ -47,11 +47,11 @@ const NSString* SECRET_KEY = @"xatUjET5NLNDXYNghNCnejt28MGpRYP2";
 - (void) startWithResultHandler:(KRecognitionResultHandler)resultHandler errorHandler:(KErrorHandler)errorHandler {
     self.resultHandler = resultHandler;
     self.errorHandler = errorHandler;
-    [self.asrEventManager sendCommand:BDS_ASR_CMD_STOP];
+    [self.asrEventManager sendCommand:BDS_ASR_CMD_START];
 }
 
 - (void)stop {
-    [self.asrEventManager sendCommand:BDS_ASR_CMD_START];
+    [self.asrEventManager sendCommand:BDS_ASR_CMD_STOP];
 }
 
 - (void)configOfflineMode {
