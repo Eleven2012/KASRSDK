@@ -37,6 +37,7 @@ const NSString* SECRET_KEY = @"xatUjET5NLNDXYNghNCnejt28MGpRYP2";
 - (instancetype)initWithLanguage:(KLanguage)language offlineGrammarDATFileURL:(NSURL * _Nullable)datFileURL {
     if (self = [super initWithLanguage:language]) {
         _offlineGrammarDATFileURL = [datFileURL copy];
+        // 创建语音识别对象
         _asrEventManager = [BDSEventManager createEventManagerWithName:BDS_ASR_NAME];
         NSString *productId = [KHelper identifierForBaiduLanguage:language];
         [_asrEventManager setParameter:productId forKey:BDS_ASR_PRODUCT_ID];
@@ -55,6 +56,7 @@ const NSString* SECRET_KEY = @"xatUjET5NLNDXYNghNCnejt28MGpRYP2";
 }
 
 - (void)configOfflineMode {
+    // 设置语音识别代理
     [self.asrEventManager setDelegate:self];
     [self.asrEventManager setParameter:@(EVRDebugLogLevelError) forKey:BDS_ASR_DEBUG_LOG_LEVEL];
     
@@ -68,7 +70,10 @@ const NSString* SECRET_KEY = @"xatUjET5NLNDXYNghNCnejt28MGpRYP2";
     [self.asrEventManager setParameter:basicModelPath forKey:BDS_ASR_MODEL_VAD_DAT_FILE];
     [self.asrEventManager setParameter:@(YES) forKey:BDS_ASR_ENABLE_MODEL_VAD];
     
+    //离线引擎身份验证 设置 APPID 离线授权所需APPCODE（APPID），如使用该方式进行正式授权，请移除临时授权文件
     [self.asrEventManager setParameter:APP_ID forKey:BDS_ASR_OFFLINE_APP_CODE];
+    
+    //识别策略 @0 : @"在线识别", @4 : @"离在线并行"
     [self.asrEventManager setParameter:@(EVR_STRATEGY_BOTH) forKey:BDS_ASR_STRATEGY];
     [self.asrEventManager setParameter:@(EVR_OFFLINE_ENGINE_GRAMMER) forKey:BDS_ASR_OFFLINE_ENGINE_TYPE];
     [self.asrEventManager setParameter:basicModelPath forKey:BDS_ASR_OFFLINE_ENGINE_DAT_FILE_PATH];
