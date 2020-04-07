@@ -33,7 +33,7 @@
 		A5504EA02437092A0034FD2D /* KBaiduRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504E9E2437092A0034FD2D /* KBaiduRecognizer.m */; };
 		A5504EA32437097C0034FD2D /* KBaseRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EA12437097C0034FD2D /* KBaseRecognition.h */; };
 		A5504EA42437097C0034FD2D /* KBaseRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EA22437097C0034FD2D /* KBaseRecognition.m */; };
-		A5504EAC24370C480034FD2D /* KRecognitionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EAA24370C480034FD2D /* KRecognitionResult.h */; };
+		A5504EAC24370C480034FD2D /* KRecognitionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EAA24370C480034FD2D /* KRecognitionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5504EAD24370C480034FD2D /* KRecognitionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EAB24370C480034FD2D /* KRecognitionResult.m */; };
 		A5504EB024370F6C0034FD2D /* KHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EAE24370F6C0034FD2D /* KHelper.h */; };
 		A5504EB124370F6C0034FD2D /* KHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EAF24370F6C0034FD2D /* KHelper.m */; };
@@ -43,8 +43,9 @@
 		A5504EB9243719370034FD2D /* KSiriRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EB7243719370034FD2D /* KSiriRecognizer.m */; };
 		A5504EBD24371BE00034FD2D /* Instructions-en.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5504EBB24371BE00034FD2D /* Instructions-en.plist */; };
 		A5504EBE24371BE00034FD2D /* Instructions-zh.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5504EBC24371BE00034FD2D /* Instructions-zh.plist */; };
-		A5504EC124372FBB0034FD2D /* KSpeechRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */; };
+		A5504EC124372FBB0034FD2D /* KSpeechRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EBF24372FBB0034FD2D /* KSpeechRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5504EC224372FBB0034FD2D /* KSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5504EC024372FBB0034FD2D /* KSpeechRecognizer.m */; };
+		A5504F48243C15F70034FD2D /* KDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = A5504EA924370BD40034FD2D /* KDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +279,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5504F48243C15F70034FD2D /* KDefine.h in Headers */,
 				A5504E622436F29C0034FD2D /* KSpeechRecognition.h in Headers */,
 				A5504E99243706F20034FD2D /* AFNetworkReachabilityManager.h in Headers */,
 				A5504E7D243705720034FD2D /* BDSEventManager.h in Headers */,
@@ -412,7 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${ACTION}\" = \"build\" ]\nthen\nINSTALL_DIR=${SRCROOT}/Products/${PROJECT_NAME}.framework\nDEVICE_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\nSIMULATOR_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n#ditto \"${DEVICE_DIR}/Headers\" \"${INSTALL_DIR}/Headers\"\nlipo -create \"${DEVICE_DIR}/${PROJECT_NAME}\" \"${SIMULATOR_DIR}/${PROJECT_NAME}\" -output \"${INSTALL_DIR}/${PROJECT_NAME}\"\nopen \"${DEVICE_DIR}\"\nopen \"${SRCROOT}/Products\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -578,6 +580,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KSpeechRecognition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,6 +608,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KSpeechRecognition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

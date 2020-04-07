@@ -7,12 +7,12 @@
 //
 
 import UIKit
-//import KSpeechRecognition
+import KSpeechRecognition
 
 class ViewController: UIViewController {
 
         
-    //let recognizer = KSpeechRecognizer(language: .chinese, shouldReportPartialResults: true)
+    let recognizer = KSpeechRecognizer(language: .chinese, shouldReportPartialResults: true)
 
     @IBOutlet weak var logView: UITextView!
     
@@ -24,13 +24,13 @@ class ViewController: UIViewController {
         let selected = !sender.isSelected
         sender.isSelected = selected
         if selected {
-//            recognizer.start(resultHandler: { [weak self] (result) in
-//                self?.outputLog("识别结果：\(result)")
-//            }) { [weak self] (error) in
-//                self?.outputLog("识别出错: \(error)")
-//            }
+            recognizer.start(resultHandler: { [weak self] (result) in
+                self?.outputLog("识别结果：\(result)")
+            }) { [weak self] (error) in
+                self?.outputLog("识别出错: \(error)")
+            }
         } else {
-            //recognizer.stop()
+            recognizer.stop()
         }
     }
     
